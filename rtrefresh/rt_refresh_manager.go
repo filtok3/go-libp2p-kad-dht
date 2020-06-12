@@ -188,7 +188,7 @@ func (r *RtRefreshManager) loop() {
 			close(w)
 		}
 		if err != nil {
-			logger.Warnw("failed when refreshing routing table", "error", err)
+			logger.Warnw("failed when refreshing routing table")//, "error", err)
 		}
 	}
 }
